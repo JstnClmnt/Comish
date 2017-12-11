@@ -95,7 +95,27 @@
 					var val = ageyear + "-" + agemonth + "-" + ageday;
 					document.zodiac.hello.value="You are "+ageyear+" years,"+agemonth+" month/s,"+ageday+ " days old";
 					}
+									
+					var randFort=Math.floor(Math.random() * 15);
+					var fort=[
+					"Makakapulot ka ng pera ngayong araw",
+					"Makakapasa ka sa quiz mo",
+					"Kakausapin ka ni crush",
+					"Kakausapin ka ni crush",
+					"Dadagdagan ni mommy ang allowance mo",
+					"Makikita mo si xander ford ",
+					"Mananalo ka sa lotto",
+					"Ililibre ka ni bes",
+					"Perfect ka sa peta sa emtech",
+					"Bibigyan ka ng iphone x ng magulang mo",
+					"Makikilala mo si forever mo",
+					"Makikita mo si oppa",
+					"Puputi ka na sawakas",
+					"Papayat ka na sis",
+					"Magbibigay ng plus 10 si sir jayson sa exam"];
+					document.zodiac.malas.value=fort[randFort];
 					}
+	
 					</script>
 		<style>
 			html, body{
@@ -177,6 +197,9 @@
 			<td><!--This empty field is just for appearance--></td></tr>
 			<tr><td><b><i>Age:</i></b></td>
 			<td><div align="right"><input class="form-control" type="text" name="hello" size="12"></div></td>
+			<td><!--This empty field is just for appearance--></td></tr>
+			<tr><td><b><i>Fortune Today:</i></b></td>
+			<td><div align="right"><input class="form-control" type="text" name="malas" size="12"></div></td>
 			<td><!--This empty field is just for appearance--></td></tr>
 		</table>
 </center>
