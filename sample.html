@@ -51,7 +51,10 @@ var randomNum = Math.floor(Math.random() * 99);
 document.zodiac.luckynum.value=randomNum;
 
 //lucky color
-var color ='#'+Math.random().toString(16).substr(2,6);
+var golden_ratio_conjugate = 0.618033988749895;
+var henlooo=Math.random()*golden_ratio_conjugate;
+colorreal=henlooo.toString(16).substr(2,6);
+var color ='#'+colorreal;
 document.getElementById("coltext").style.color = color;
 
 var leapyear=((birthyear % 4 == 0) && (birthyear % 100 != 0)) || (birthyear % 400 == 0);
